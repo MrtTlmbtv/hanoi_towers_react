@@ -5,11 +5,12 @@
 }
 
 .tower-container {
+  display: flex;
   min-width: 200px;
-  /* text-align: center; */
 }
 
 .tower {
+  align-content: stretch;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -18,7 +19,6 @@
   width: 15px;
   min-height: 200px;
   background-color: rgb(162, 162, 162);
-  /* padding: 0 80px; */
 }
 
 .tower:hover {

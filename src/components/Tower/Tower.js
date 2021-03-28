@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Tower.css";
 import { useDrop, useDrag } from "react-dnd";
 
