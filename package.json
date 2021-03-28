@@ -1,4 +1,5 @@
 {
+  "homepage": "http://MrtTlmbtv.github.io/hanoi_towers_react/",
   "name": "hanoi_towers",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +15,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://mrttlmbtv.github.io/hanoi_towers_react/",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
