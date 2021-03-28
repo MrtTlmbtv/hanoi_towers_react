@@ -1,0 +1,33 @@
+.towers {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.tower-container {
+  min-width: 200px;
+  /* text-align: center; */
+}
+
+.tower {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 15px;
+  min-height: 200px;
+  background-color: rgb(162, 162, 162);
+  /* padding: 0 80px; */
+}
+
+.tower:hover {
+  opacity: 80%;
+  transition: 0.3s;
+}
+
+.disk {
+  height: 40px;
+  margin-top: 20px;
+  background-color: rgb(141, 207, 255);
+}
