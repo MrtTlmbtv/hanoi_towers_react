@@ -1,0 +1,27 @@
+.leaderboard__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+.leaderboard__list-item {
+  margin: 10px;
+}
+
+.leaderboard__leaders-table {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.leaderboard__rank {
+  margin-left: 10px;
+}
+
+#levels {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}

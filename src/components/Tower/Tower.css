@@ -1,4 +1,6 @@
 .towers {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 900px;
   margin: 20px auto;
   padding: 10px;
@@ -7,6 +9,7 @@
 .tower-container {
   display: flex;
   min-width: 200px;
+  margin-bottom: 10px;
 }
 
 .tower {
@@ -26,8 +29,13 @@
   transition: 0.3s;
 }
 
+.tower > .disk:first-child {
+  background-color: rgb(93, 196, 255);
+}
+
 .disk {
-  height: 40px;
-  margin-top: 20px;
-  background-color: rgb(141, 207, 255);
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 15px;
+  background-color: rgb(57, 139, 194);
 }

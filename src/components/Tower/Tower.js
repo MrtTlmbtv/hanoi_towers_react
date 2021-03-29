@@ -18,11 +18,6 @@ function Tower(props) {
 
   const [{ canDrop, isOver }, drop] = useDrop(() => ({
     accept: "DISK",
-    // hover(item, monitor) {
-    //   monitor.canDrop(item, monitor)
-    //     ? console.log("ABLE")
-    //     : console.log("DISABLE");
-    // },
     canDrop(item, monitor) {
       if (props.disks.length === 0 || props.disks[0] > item.diskNum[0])
         return true;
@@ -42,7 +37,7 @@ function Tower(props) {
             className="disk"
             id={item}
             style={{
-              width: item * 50 + "px",
+              width: item * 70 + "px",
             }}
           ></div>
         ))}

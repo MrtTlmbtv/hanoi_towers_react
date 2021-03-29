@@ -1,18 +1,66 @@
 import React, { useState } from "react";
 import Game from "./components/Game/Game";
 import "./App.css";
+import Leaderboard from "./components/Leaderboard/Leaderboard";
+import About from "./components/About/About";
+
+import { Route, Switch, Link } from "react-router-dom";
+
 function App() {
+  return (
+    <div className="App">
+      <div className="app-container">
+        <div className="app-main">
+          <h1 className="game__title">HANOI TOWERS</h1>
+          <Switch>
+            {/* <Route path="/home" component={Game} /> */}
+            <Route path="/" exact component={GameStart} />
+            <Route path="/about" component={About} />
+            <Route path="/leaderboard" component={Leaderboard} />
+            {/* <Redirect from="/" to="/home" /> */}
+          </Switch>
+        </div>
+        <nav className="nav-menu">
+          <ul className="nav-list">
+            <li className="nav__item">
+              <Link className="SectionNavigation-Item Section" to={"/"}>
+                Game
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                className="SectionNavigation-Item Section"
+                to={"/leaderboard"}
+              >
+                Leaderboard
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link className="SectionNavigation-Item Section" to={"/about"}>
+                About
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+const GameStart = (props) => {
   const [start, setStart] = useState(false);
   const [gameLevel, setGameLevel] = useState(3);
   const [errors, setErrors] = useState([]);
+
   function handleStart(e) {
+    console.log(start);
     setStart(true);
   }
 
   function handleLevelInput(e) {
-    if (e.target.value > 10) {
+    if (e.target.value > 7) {
       setErrors((prev) => [
-        "Level can't be over 10 (It might just take you a bit longer than you think 🤭)",
+        "Level can't be over 7 (It might just take you a bit longer than you think 🤭)",
       ]);
     } else if (e.target.value < 3) {
       setErrors((prev) => [
@@ -25,24 +73,9 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1 className="game__title">HANOI TOWERS</h1>
+    <>
       {!start && (
         <>
-          <div className="game__description">
-            <p>
-              Hello 👋👋! In this game you have to solve a popular mathematical
-              game-puzzle called <strong>Hanoi Towers! </strong>
-              The objective of the puzzle is to move the entire stack to last
-              rod, obeying the following simple rules:
-            </p>
-            <p>Only one disk can be moved at a time. </p>
-            <p>
-              Each move consists of taking the upper disk from one of the stacks
-              and placing it on top of another stack or on an empty rod.
-            </p>
-            <p>No larger disk may be placed on top of a smaller disk.</p>
-          </div>
           <span>Please select the level: </span>
           <span className="game__error-message" style={{ color: "red" }}>
             {errors}
@@ -54,7 +87,7 @@ function App() {
               className="game__level-input"
               name="level"
               min={3}
-              max={10}
+              max={7}
               onInput={handleLevelInput}
             />
 
@@ -70,10 +103,8 @@ function App() {
           </div>
         </>
       )}
-
       {start && <Game gameLevel={Number(gameLevel)}></Game>}
-    </div>
+    </>
   );
-}
-
+};
 export default App;

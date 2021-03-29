@@ -1,9 +1,13 @@
 .App {
   max-width: 900px;
   margin: 0 auto;
-
+  height: 100%;
   font-size: 1.4rem;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .game__title {
@@ -18,7 +22,7 @@
 
 .game__level-input {
   border: none;
-  border-bottom: 1px solid rgb(201, 201, 201);
+  border-bottom: 1px solid rgb(213, 213, 213);
   min-width: 200px;
   font-size: 1.4rem;
   margin: 15px;
@@ -33,7 +37,7 @@
 .game__btn {
   border-radius: 7px;
   border: none;
-  background-color: rgb(80, 182, 255);
+  background-color: rgb(37, 146, 255);
   color: white;
   font-size: 1.4rem;
   min-height: 40px;
@@ -45,8 +49,34 @@
   opacity: 0.7;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav-menu {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.app-main {
+  flex: 1 0 auto;
+}
+
 .game__btn:disabled {
-  background-color: rgb(158, 158, 158);
+  background-color: rgb(187, 187, 187);
 }
 
 @media only screen and (max-device-width: 768px) {

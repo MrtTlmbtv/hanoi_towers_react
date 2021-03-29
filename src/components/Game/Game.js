@@ -42,7 +42,7 @@ function Game(props) {
     return () => {
       clearInterval(interval);
     };
-  }, [moveCount]);
+  }, [disks]);
 
   return (
     <>
@@ -59,19 +59,16 @@ function Game(props) {
           <div className="towers">
             <DndProvider backend={HTML5Backend}>
               <Tower
-                // ref={drop}
                 disks={disks["1"]}
                 handleDiskMove={handleDiskMove}
                 towerNum={1}
               ></Tower>
               <Tower
-                // ref={drop}
                 disks={disks["2"]}
                 towerNum={2}
                 handleDiskMove={handleDiskMove}
               ></Tower>
               <Tower
-                // ref={drop}
                 disks={disks["3"]}
                 towerNum={3}
                 handleDiskMove={handleDiskMove}
