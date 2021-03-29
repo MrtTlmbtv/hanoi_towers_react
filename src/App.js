@@ -8,46 +8,44 @@ import { HashRouter, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter basename="/">
-      <div className="App">
-        <div className="app-container">
-          <div className="app-main">
-            <h1 className="game__title">HANOI TOWERS</h1>
+    <div className="App">
+      <div className="app-container">
+        <div className="app-main">
+          <h1 className="game__title">HANOI TOWERS</h1>
 
-            <Switch>
-              {/* <Route path="/home" component={Game} /> */}
-              <Route path="/" exact component={GameStart} />
-              <Route path="/about" component={About} />
-              <Route path="/leaderboard" component={Leaderboard} />
-              {/* <Redirect from="/" to="/home" /> */}
-            </Switch>
-          </div>
-
-          <nav className="nav-menu">
-            <ul className="nav-list">
-              <li className="nav__item">
-                <Link className="SectionNavigation-Item Section" to={"/"}>
-                  Game
-                </Link>
-              </li>
-              <li className="nav__item">
-                <Link
-                  className="SectionNavigation-Item Section"
-                  to={"/leaderboard"}
-                >
-                  Leaderboard
-                </Link>
-              </li>
-              <li className="nav__item">
-                <Link className="SectionNavigation-Item Section" to={"/about"}>
-                  About
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <Switch>
+            {/* <Route path="/home" component={Game} /> */}
+            <Route path="/" exact component={GameStart} />
+            <Route path="/about" component={About} />
+            <Route path="/leaderboard" component={Leaderboard} />
+            {/* <Redirect from="/" to="/home" /> */}
+          </Switch>
         </div>
+
+        <nav className="nav-menu">
+          <ul className="nav-list">
+            <li className="nav__item">
+              <Link className="SectionNavigation-Item Section" to={"/"}>
+                Game
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                className="SectionNavigation-Item Section"
+                to={"/leaderboard"}
+              >
+                Leaderboard
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link className="SectionNavigation-Item Section" to={"/about"}>
+                About
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </HashRouter>
+    </div>
   );
 }
 
