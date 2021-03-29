@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hanoi_towers_react/static/css/main.21c7072d.chunk.css",
-    "main.js": "/hanoi_towers_react/static/js/main.f4216c57.chunk.js",
-    "main.js.map": "/hanoi_towers_react/static/js/main.f4216c57.chunk.js.map",
-    "runtime-main.js": "/hanoi_towers_react/static/js/runtime-main.eb95f543.js",
-    "runtime-main.js.map": "/hanoi_towers_react/static/js/runtime-main.eb95f543.js.map",
-    "static/js/2.441b2152.chunk.js": "/hanoi_towers_react/static/js/2.441b2152.chunk.js",
-    "static/js/2.441b2152.chunk.js.map": "/hanoi_towers_react/static/js/2.441b2152.chunk.js.map",
-    "static/js/3.0a8bc602.chunk.js": "/hanoi_towers_react/static/js/3.0a8bc602.chunk.js",
-    "static/js/3.0a8bc602.chunk.js.map": "/hanoi_towers_react/static/js/3.0a8bc602.chunk.js.map",
+    "main.css": "/hanoi_towers_react/static/css/main.1598ac6d.chunk.css",
+    "main.js": "/hanoi_towers_react/static/js/main.920830ea.chunk.js",
+    "main.js.map": "/hanoi_towers_react/static/js/main.920830ea.chunk.js.map",
+    "runtime-main.js": "/hanoi_towers_react/static/js/runtime-main.3f86a20e.js",
+    "runtime-main.js.map": "/hanoi_towers_react/static/js/runtime-main.3f86a20e.js.map",
+    "static/js/2.145bdf36.chunk.js": "/hanoi_towers_react/static/js/2.145bdf36.chunk.js",
+    "static/js/2.145bdf36.chunk.js.map": "/hanoi_towers_react/static/js/2.145bdf36.chunk.js.map",
+    "static/js/3.9d37e87a.chunk.js": "/hanoi_towers_react/static/js/3.9d37e87a.chunk.js",
+    "static/js/3.9d37e87a.chunk.js.map": "/hanoi_towers_react/static/js/3.9d37e87a.chunk.js.map",
     "index.html": "/hanoi_towers_react/index.html",
-    "static/css/main.21c7072d.chunk.css.map": "/hanoi_towers_react/static/css/main.21c7072d.chunk.css.map",
-    "static/js/2.441b2152.chunk.js.LICENSE.txt": "/hanoi_towers_react/static/js/2.441b2152.chunk.js.LICENSE.txt"
+    "static/css/main.1598ac6d.chunk.css.map": "/hanoi_towers_react/static/css/main.1598ac6d.chunk.css.map",
+    "static/js/2.145bdf36.chunk.js.LICENSE.txt": "/hanoi_towers_react/static/js/2.145bdf36.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb95f543.js",
-    "static/js/2.441b2152.chunk.js",
-    "static/css/main.21c7072d.chunk.css",
-    "static/js/main.f4216c57.chunk.js"
+    "static/js/runtime-main.3f86a20e.js",
+    "static/js/2.145bdf36.chunk.js",
+    "static/css/main.1598ac6d.chunk.css",
+    "static/js/main.920830ea.chunk.js"
   ]
 }
