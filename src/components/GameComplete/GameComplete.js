@@ -4,7 +4,7 @@ import "../GameComplete/GameComplete.css";
 import { db } from "../../firebase";
 
 function GameComplete(props) {
-  const [playerName, setPlayerName] = useState("unknown");
+  const [playerName, setPlayerName] = useState("");
   const history = useHistory();
   function handleSubmit(e) {
     e.preventDefault();
@@ -31,9 +31,8 @@ function GameComplete(props) {
         <div className="game__complete-description">
           <p>Congratulations 🎉🎉🎉</p>
           <p>
-            You built the {props.towerLevel}-disk Hanoi Tower in only
-            {props.buildTime}
-            {props.time} seconds and {props.moveCount} moves 👏.
+            You built the {props.towerLevel}-disk Hanoi Tower in only{" "}
+            {props.buildTime} seconds and {props.moveCount} moves 👏.
           </p>
           <p>Please enter your name to be in the leaderboard!</p>
         </div>
@@ -44,6 +43,7 @@ function GameComplete(props) {
           placeholder="your name"
           onChange={(e) => setPlayerName(e.target.value)}
           value={playerName}
+          maxLength={15}
         ></input>
         <div>
           <button type="submit" className="game__btn">
