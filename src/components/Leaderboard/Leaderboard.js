@@ -17,7 +17,6 @@ function Leaderboard() {
         });
         setRecords(records1);
       });
-    console.log(records1);
   }, [currentLevel]);
 
   return (

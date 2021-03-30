@@ -23,7 +23,6 @@ function Tower(props) {
         return true;
     },
     drop: (item, monitor) => {
-      // console.log(item.diskNum, props.disks[0]);
       props.handleDiskMove(item.from, props.towerNum);
     },
   }));
@@ -37,7 +36,7 @@ function Tower(props) {
             className="disk"
             id={item}
             style={{
-              width: item * 70 + "px",
+              width: item * 50 + "px",
             }}
           ></div>
         ))}

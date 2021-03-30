@@ -55,7 +55,6 @@ const GameStart = (props) => {
   const [errors, setErrors] = useState([]);
 
   function handleStart(e) {
-    console.log(start);
     setStart(true);
   }
 
